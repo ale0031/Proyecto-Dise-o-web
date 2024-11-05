@@ -1,0 +1,116 @@
+.navbar{
+    background-color: #2E321E;  
+    position: fixed;
+    display: flex;  
+    color: #fff;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+nav ul li{
+    display: inline;
+    margin-right: 10px;
+    align-content: center;
+    color: #fff;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+} 
+
+.LOGO{
+    width: 100px;
+    height: 100px;
+
+}
+.navbar-nav { 
+    display: flex; 
+    justify-content: flex-end; /* Mueve el contenido hacia la derecha */ 
+    align-items: center; 
+}
+.navbar-collapse{
+    justify-content: center;
+    
+}
+
+
+.pantalla {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    max-height: 250px;
+    background-color: rgba(128, 128, 128, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    box-sizing: border-box;
+
+
+}
+/*tablet*/
+@media(max-width: 768px){
+    .pantalla{
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    max-height: 250px;
+    background-color: rgba(128, 128, 128, 0.6);
+    display: flex;
+    align-items: center;
+    z-index: 10000;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    box-sizing: border-box;
+    }
+
+}
+/*celu*/
+@media(max-width: 777px){
+    .pantalla{
+        position: absolute;
+        top: 36%;
+        left: 50%;
+        width: 63%;
+        max-width: 500px;
+        height: 22%;
+        max-height: 250px;
+        background-color: rgba(128, 128, 128, 0.6);
+        display: flex;
+        align-items: center;
+        z-index: 10000;
+        align-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        transform: translate(-50%, -50%);
+        padding: 60px;
+        box-sizing: border-box;
+    }
+
+}
+
+.pantalla p, .pantalla h3 {
+    margin: 0; /* Elimina los márgenes de los elementos p y h3 dentro del contenedor */
+    color: #fff; /* Establece el color del texto de los elementos p y h3 a blanco */
+
+  }
+  
+  .pantalla h3 {
+    font-size: 24px; /* Establece el tamaño de fuente del elemento h3 a 24px */
+    flex-grow: initial;
+}
