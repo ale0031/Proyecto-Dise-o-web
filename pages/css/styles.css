@@ -710,6 +710,13 @@ carousel-img{
 .alert-warning h4 {
     font-weight: bold;
 }
+@media (max-width: 576px) {
+    .alert p {
+        word-wrap: break-word;
+        white-space: normal;
+    }
+}
+
 
 .alert-warning p {
     font-size: 1.1rem;
